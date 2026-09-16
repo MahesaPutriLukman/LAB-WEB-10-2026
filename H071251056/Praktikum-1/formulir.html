@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formulir Registrasi dan Pertanyaan Pengunjung Wisata Bahari Raja Ampat, Papua Barat Daya.">
+    <title>Formulir Pengunjung - Pesona Wisata Bahari Raja Ampat</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pesona Wisata Bahari Raja Ampat</h1>
+        <p><em>Menjelajahi Mahakarya Karst dan Surga Keanekaragaman Hayati Bawah Laut Terkaya di Dunia</em></p>
+        <hr>
+    </header>
+
+    <nav>
+        <h2>Daftar Menu Navigasi</h2>
+        <ul>
+            <li><a href="index.html">Informasi Utama (Beranda)</a></li>
+            <li><a href="galeri.html">Galeri Foto</a></li>
+            <li><a href="aktivitas.html">Aktivitas Wisata</a></li>
+            <li><a href="lokasi.html">Lokasi &amp; Aksesibilitas</a></li>
+            <li><a href="tabel-wisata.html">Tabel Informasi Wisata</a></li>
+            <li><a href="multimedia.html">Multimedia Video</a></li>
+            <li><strong>Formulir Pengunjung</strong></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+
+        <section id="formulir-pengunjung">
+            <h2>Formulir Registrasi &amp; Pertanyaan Pengunjung</h2>
+            <p>Silakan lengkapi formulir di bawah ini untuk pendaftaran rencana perjalanan, pertanyaan paket tur, atau
+                penyampaian kritik dan saran:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><strong>Data Diri Pengunjung</strong></legend>
+                    <p>
+                        <label for="nama_lengkap">Nama Lengkap:</label><br>
+                        <input type="text" id="nama_lengkap" name="nama_lengkap" size="40"
+                            placeholder="Masukkan nama lengkap Anda" required>
+                    </p>
+                    <p>
+                        <label for="alamat_email">Alamat Email:</label><br>
+                        <input type="email" id="alamat_email" name="alamat_email" size="40"
+                            placeholder="contoh: pengunjung@email.com" required>
+                    </p>
+                    <p>
+                        <label for="nomor_telepon">Nomor Telepon / WhatsApp:</label><br>
+                        <input type="tel" id="nomor_telepon" name="nomor_telepon" size="30"
+                            placeholder="contoh: 081234567890" required>
+                    </p>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend><strong>Rencana Perjalanan Wisata</strong></legend>
+                    <p>
+                        <label for="tanggal_kunjungan">Perkiraan Tanggal Kunjungan:</label><br>
+                        <input type="date" id="tanggal_kunjungan" name="tanggal_kunjungan" required>
+                    </p>
+                    <p>
+                        <label for="kategori_wisatawan">Kategori Wisatawan:</label><br>
+                        <select id="kategori_wisatawan" name="kategori_wisatawan" required>
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="domestik">Wisatawan Domestik (WNI)</option>
+                            <option value="mancanegara">Wisatawan Mancanegara (WNA)</option>
+                            <option value="peneliti">Pelajar / Peneliti Ilmiah</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="paket_destinasi">Pilihan Paket / Destinasi Favorit:</label><br>
+                        <select id="paket_destinasi" name="paket_destinasi">
+                            <option value="wayag_trip">Paket Wayag Explorer (Raja Ampat Utara)</option>
+                            <option value="piaynemo_trip">Paket Piaynemo &amp; Fam Island Tour</option>
+                            <option value="misool_trip">Paket Misool Nature &amp; Marine Adventure</option>
+                            <option value="diving_special">Paket Diving Trip (Cape Kri, Blue Magic, Manta Sandy)
+                            </option>
+                            <option value="birdwatching">Paket Trekking &amp; Cenderawasih Watching</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend><strong>Pesan, Kebutuhan Khusus, atau Saran</strong></legend>
+                    <p>
+                        <label for="pesan_saran">Tuliskan pesan, pertanyaan detail, atau saran Anda:</label><br>
+                        <textarea id="pesan_saran" name="pesan_saran" rows="6" cols="60"
+                            placeholder="Tuliskan pesan atau kebutuhan khusus perjalanan Anda di sini..."></textarea>
+                    </p>
+                </fieldset>
+                <br>
+
+                <p>
+                    <button type="submit">Kirim Formulir</button>
+                    <button type="reset">Reset Formulir</button>
+                </p>
+            </form>
+            <hr>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Tidak Hak cipta wong scriptnya kebanyakan copas XD</p>
+    </footer>
+
+</body>
+
+</html>
