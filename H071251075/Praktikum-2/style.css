@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 10px;
+}
+
+h1, h2 {
+    color: rgb(17, 193, 220);
+}
+
+p {
+    font-size: 16px;
+}
+
+#tentang {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+#foto {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+}
+
+#galeri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#daftar-aktifitas {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav button {
+    padding: 10px;
+    border: none;
+    background-color: #1cb0e1;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav button:hover {
+    background-color: #004d6d;
+}
+
+.capt button a{
+    color:white;
+}
+
+.capt button{
+    background-color:#1cb0e1 ;
+}
+
+.capt button:hover {
+    background-color: #004d6d;
+}
+
+
+.gambar {
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.capt {
+    text-align: center;
+    margin-top: 15px;
+}
+
+figure {
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 20px auto;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #1cb0e1;
+    color: white;
+}
+
+input, textarea {
+    padding: 8px;
+    margin: 5px 0;
+    width: 90%;
+}
+
+button {
+    padding: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
