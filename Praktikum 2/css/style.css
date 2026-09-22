@@ -1,0 +1,102 @@
+html {
+    background-color: aliceblue;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 300;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color:rgb(39, 152, 39);
+}
+
+header img {
+    height: 48px;
+    width: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 480;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    color:darkgreen;
+}
+
+main {
+    max-width: 100%;
+    margin: 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section p {
+    font-size: 1rem;
+    color: #4a5568;
+    text-align: justify;
+}
+
+#beranda h1 {
+    text-align: center;
+}
+
+#beranda p {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+    border: none;
+}
+
+table {
+    width: 100%;
+}
+
+thead tr {
+    background-color: darkgreen;
+    color: white;
+}
+
+tfoot tr {
+    background-color: white;
+    font-weight: bold;
+}
+
+#kontak {
+    width: 100%;
+}
+
+fieldset {
+    width: 100%;
+    border: solid 1px;
+    border-radius: 16px;
+}
+
+@media (max-width: 600px){
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
