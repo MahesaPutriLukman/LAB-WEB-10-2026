@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKARANA Merch 2026 - Produksi Karya</title>
+    <!-- Memanggil Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Baloo+2:wght@500;700;800&family=Caveat:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'title': ['"Fredericka the Great"', 'cursive'],
+                        'display': ['"Baloo 2"', 'cursive'],
+                        'hand': ['"Caveat"', 'cursive'],
+                        'body': ['"Poppins"', 'sans-serif'],
+                    },
+                    colors: {
+                        'akarana-navy': '#0f407d',
+                        'akarana-navy-dark': '#0b2c56',
+                        'akarana-orange': '#df4924',
+                        'akarana-orange-light': '#f2582f',
+                        'akarana-gold': '#eaa124',
+                        'akarana-cream': '#fbf3e2',
+                        'akarana-paper': '#fffdf9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-akarana-cream text-gray-800 font-body scroll-smooth bg-[radial-gradient(#eaa124_1px,transparent_1px)] [background-size:24px_24px]">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-akarana-cream/95 backdrop-blur-md z-50 border-b border-akarana-gold/30 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center">
+                <img src="asset/logo-akarana.jpg" alt="Logo Akarana" class="h-12 w-auto object-contain">
+            </a>
+            
+            <div class="hidden md:flex gap-8 font-semibold text-akarana-navy-dark text-sm">
+                <a href="#beranda" class="hover:text-akarana-orange transition-colors">Beranda</a>
+                <a href="#tentang" class="hover:text-akarana-orange transition-colors">Tentang</a>
+                <a href="#produk" class="hover:text-akarana-orange transition-colors">Katalog Layanan</a>
+                <a href="#kontak" class="hover:text-akarana-orange transition-colors">Kontak & Form</a>
+            </div>
+
+            <a href="#kontak" class="hidden md:inline-block bg-akarana-navy text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-akarana-orange hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                Pre-Order
+            </a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="beranda" class="pt-28 pb-8 px-4 text-center bg-akarana-navy border-b-4 border-akarana-gold shadow-md relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="font-display text-3xl md:text-5xl font-extrabold text-white tracking-wide drop-shadow-md">
+                Produksi Karya AKARANA 2026
+            </h1>
+            <p class="mt-3 font-hand text-lg md:text-xl text-akarana-gold drop-shadow-sm">
+                "Nyatakan Hadirmu dengan Kreasi, Wujudkan Lewat Cita dan Cinta."
+            </p>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="py-12 md:py-16 px-4 md:px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10">
+            
+            <div class="text-left">
+                <div class="inline-flex items-center gap-2 bg-yellow-100/80 text-akarana-orange font-semibold px-4 py-1.5 rounded-full mb-6 text-sm tracking-wide border border-akarana-orange/20 shadow-sm">
+                    <span class="relative flex h-2.5 w-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-akarana-orange opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-akarana-orange"></span>
+                    </span>
+                    OPEN PRE-ORDER
+                </div>
+
+                <h2 class="font-display text-4xl md:text-5xl font-extrabold text-akarana-navy leading-[1.15] mb-6 drop-shadow-sm">
+                    Bawa Cerita <span class="text-transparent bg-clip-text bg-gradient-to-r from-akarana-orange to-akarana-orange-light">AKARANA</span> Bersamamu.
+                </h2>
+                
+                <p class="text-gray-700 text-lg mb-8 leading-relaxed max-w-lg">
+                    Dukung perjalanan seni kami! Koleksi merchandise Produksi Karya 2026 dengan desain menarik telah resmi dibuka. Yuk tentukan Pilihan kalian dan kantongi sebelum kehabisan. 
+                </p>
+
+                <div class="flex flex-wrap gap-4 items-center">
+                    <a href="#produk" class="bg-gradient-to-r from-akarana-orange to-akarana-orange-light text-white font-semibold px-8 py-3.5 rounded-full hover:shadow-[0_8px_20px_rgba(223,73,36,0.3)] transition-all transform hover:-translate-y-1">
+                        Lihat Katalog Produk
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Kolom Visual Hero -->
+            <div class="relative w-full max-w-md mx-auto md:max-w-full">
+               
+                <div class="aspect-[4/5] md:aspect-square bg-akarana-navy rounded-[2.5rem] rotate-2 relative shadow-2xl p-4 border-[6px] border-white transition-transform duration-500 hover:rotate-0">
+                    <div class="w-full h-full bg-yellow-50 rounded-[2rem] border-2 border-dashed border-akarana-gold overflow-hidden relative group">
+
+                        <img src="asset/paket5.jpg" alt="Merchandise Akarana" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-akarana-navy/90 via-akarana-navy/20 to-transparent"></div>
+                        <div class="absolute bottom-8 left-0 w-full text-center px-4">
+                            <h3 class="text-white font-display text-3xl font-bold tracking-wide">Koleksi Terbatas</h3>
+                            <p class="text-white/80 text-sm mt-1">Edisi Eksklusif 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+
+        <!-- ABOUT -->
+        <section id="tentang" class="pt-24 scroll-mt-20">
+            <div class="bg-white border-2 border-akarana-gold rounded-[2rem] p-10 md:p-14 text-center shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-4 bg-akarana-navy"></div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-akarana-navy mb-6">Tentang Merchandise AKARANA</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                    Setiap karya seni menyimpan cerita yang layak dikenang. Merchandise AKARANA diciptakan khusus sebagai buah tangan dan simbol dedikasi dari Produksi Karya 2026. Kami menghadirkan pelbagai produk estetik berkualitas tinggi munlai dari stiker, gantungan kunci, pin, kipas tangan, hingga baju yang didesain khas untuk peminat seni teater dan warga kampus yang ingin mengekspresikan diri mereka.
+                </p>
+            </div>
+        </section>
+
+        <!-- KATALOG SATUAN -->
+        <section id="produk" class="pt-24 scroll-mt-20">
+            <div class="bg-akarana-navy p-4 md:p-5 rounded-[2rem] shadow-xl relative">
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-akarana-gold text-akarana-navy-dark font-display font-bold px-6 py-2 rounded-full border-4 border-white shadow-md z-20">
+                    Katalog produk merchandise
+                </div>
+
+                <div class="bg-akarana-paper border-4 border-akarana-navy rounded-2xl p-6 md:p-10 relative shadow-[inset_0_0_0_6px_#fbf3e2] mt-4">
+                    <p class="text-center text-gray-500 mb-8 font-medium">yuk Pilih merchandise yang kamu suka!</p>
+
+                    <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 pt-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+                        
+                        <!-- Stiker -->
+                        <article class="snap-center flex-none w-72 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 hover:border-akarana-gold relative">
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center p-2">
+                                <img src="asset/foto-stiker.jpg" alt="Sticker Pack" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Sticker Pack (A5)</h3>
+                            <p class="text-gray-500 text-sm mb-4 flex-grow">stiker pack dengan pilihan dua desain unik khas teater dan Unhas.</p>
+                            <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 15.000</span>
+                        </article>
+
+                        <!-- Kaos -->
+                        <article class="snap-center flex-none w-72 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 hover:border-akarana-gold">
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/baju-akarana.jpg" alt="Kaos" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Kaos Premium</h3>
+                            <p class="text-gray-500 text-sm mb-4 flex-grow">Bahan katun lembut yang menyerap keringat.</p>
+                            <div class="flex flex-col gap-1 items-center">
+                                <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-3 py-1 rounded-lg text-xs">Pendek: Rp 100.000</span>
+                                <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-3 py-1 rounded-lg text-xs">Panjang: Rp 110.000</span>
+                            </div>
+                        </article>
+
+                        <!-- Ganci -->
+                        <article class="snap-center flex-none w-72 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 hover:border-akarana-gold">
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/ganci-akarana.jpg" alt="Ganci" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Gantungan Kunci</h3>
+                            <p class="text-gray-500 text-sm mb-4 flex-grow">Material akrilik tebal dengan 4 pilihan desain.</p>
+                            <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 15.000</span>
+                        </article>
+
+                        <!-- Pin -->
+                        <article class="snap-center flex-none w-72 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 hover:border-akarana-gold">
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/pin-akarana.jpg" alt="Pin" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Pin AKARANA</h3>
+                            <p class="text-gray-500 text-sm mb-4 flex-grow">Tersedia 4 desain menarik yang dibuat khusus untuk umum dan bagian dari akarana.</p>
+                            <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 5.000</span>
+                        </article>
+
+                        <!-- Kipas Tangan -->
+                        <article class="snap-center flex-none w-72 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 hover:border-akarana-gold">
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/kipas-akarana.jpg" alt="Kipas" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Kipas Tangan</h3>
+                            <p class="text-gray-500 text-sm mb-4 flex-grow">Kipas dengankarakter kucing yang lucu! tersedia desain A/B.</p>
+                            <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 17.000</span>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAKET BUNDLING -->
+        <section id="bundling" class="pt-16 scroll-mt-20">
+            <div class="bg-akarana-orange-light p-4 md:p-5 rounded-[2rem] shadow-xl relative">
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-white text-akarana-orange font-display font-bold px-6 py-2 rounded-full border-4 border-akarana-orange shadow-md z-20 flex items-center gap-2">
+                    Paket Bundling Hemat
+                </div>
+
+                <div class="bg-akarana-paper border-4 border-white rounded-2xl p-6 md:p-10 relative shadow-[inset_0_0_0_6px_#fbf3e2] mt-4">
+                    <p class="text-center text-gray-500 mb-8 font-medium">Dapatkan harga lebih murah dengan membeli paket bundling!</p>
+
+                    <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 pt-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+
+                        <!-- Bundling 1 -->
+                        <article class="snap-center flex-none w-72 mt-6 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 relative">
+                            <div class="absolute -top-3 -left-3 bg-akarana-navy text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10 transform -rotate-6">Paket 1</div>
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/paket1.jpg" alt="Paket 1" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Pin + Stiker</h3>
+                            <div class="mt-auto flex flex-col items-center">
+                                <span class="text-gray-400 line-through text-xs font-semibold">Rp 20.000</span>
+                                <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 18.000</span>
+                                <span class="text-akarana-gold text-xs font-bold mt-1">Hemat Rp 2.000</span>
+                            </div>
+                        </article>
+
+                        <!-- Bundling 2 -->
+                        <article class="snap-center flex-none w-72 mt-6 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 relative">
+                            <div class="absolute -top-3 -left-3 bg-akarana-navy text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10 transform -rotate-6">Paket 2</div>
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/paket2.jpg" alt="Paket 2" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Ganci + Stiker</h3>
+                            <div class="mt-auto flex flex-col items-center">
+                                <span class="text-gray-400 line-through text-xs font-semibold">Rp 30.000</span>
+                                <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 27.000</span>
+                                <span class="text-akarana-gold text-xs font-bold mt-1">Hemat Rp 3.000</span>
+                            </div>
+                        </article>
+
+                        <!-- Bundling 3 -->
+                        <article class="snap-center flex-none w-72 mt-6 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 relative">
+                            <div class="absolute -top-3 -left-3 bg-akarana-navy text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10 transform -rotate-6">Paket 3</div>
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/paket3.jpg" alt="Paket 3" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Ganci + Pin + Stiker</h3>
+                            <div class="mt-auto flex flex-col items-center">
+                                <span class="text-gray-400 line-through text-xs font-semibold">Rp 35.000</span>
+                                <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 32.000</span>
+                                <span class="text-akarana-gold text-xs font-bold mt-1">Hemat Rp 3.000</span>
+                            </div>
+                        </article>
+
+                        <!-- Bundling 4 -->
+                        <article class="snap-center flex-none w-72 mt-6 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 relative">
+                            <div class="absolute -top-3 -left-3 bg-akarana-navy text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10 transform -rotate-6">Paket 4</div>
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/paket4.jpg" alt="Paket 4" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Kipas + Ganci + Pin + Stiker</h3>
+                            <div class="mt-auto flex flex-col items-center">
+                                <span class="text-gray-400 line-through text-xs font-semibold">Rp 52.000</span>
+                                <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-5 py-1 rounded-lg">Rp 47.000</span>
+                                <span class="text-akarana-gold text-xs font-bold mt-1">Hemat Rp 5.000</span>
+                            </div>
+                        </article>
+
+                        <!-- Bundling 5 -->
+                        <article class="snap-center flex-none w-72 mt-6 bg-white rounded-2xl p-5 text-center border-2 border-yellow-200 shadow-md flex flex-col group hover:-translate-y-1 transition duration-300 relative">
+                            <div class="absolute -top-3 -left-3 bg-akarana-navy text-white text-xs font-bold px-3 py-1 rounded-full shadow-md z-10 transform -rotate-6">Paket 5</div>
+                            <div class="bg-yellow-50 rounded-xl aspect-[3/4] mb-4 overflow-hidden border border-gray-100 flex items-center justify-center relative">
+                                <img src="asset/paket5.jpg" alt="Paket 5" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-500" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="font-display text-xl text-akarana-navy font-bold mb-2">Baju + Pin + Stiker</h3>
+                            
+                            <!-- Format Harga Khusus Paket 5 -->
+                            <div class="mt-auto flex flex-col items-center gap-1.5">
+                                <div class="text-[11px] text-gray-400 font-semibold line-through">
+                                    Pdk: Rp 122.000 | Pjg: Rp 132.000
+                                </div>
+                                <div class="flex flex-col gap-1 w-full">
+                                    <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-3 py-1 rounded-lg text-xs">Pendek: Rp 115.000</span>
+                                    <span class="inline-block bg-white border-2 border-dashed border-akarana-orange text-akarana-orange font-bold px-3 py-1 rounded-lg text-xs">Panjang: Rp 125.000</span>
+                                </div>
+                                <span class="text-akarana-gold text-xs font-bold mt-1">Hemat Rp 7.000</span>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONI & FORM PEMESANAN -->
+        <section id="kontak" class="pt-20 scroll-mt-24 grid md:grid-cols-2 gap-10">
+            
+           <!-- Testimoni -->
+            <div class="flex flex-col h-full">
+                <h2 class="font-display text-3xl font-bold text-akarana-navy mb-6">Apa Kata Pelanggan?</h2>
+                
+                <div class="flex-grow max-h-[620px] overflow-y-auto pr-4 space-y-4 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-yellow-50 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:bg-akarana-gold [&::-webkit-scrollbar-thumb]:rounded-full">
+                    
+                    <!-- Ulasan -->
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-akarana-orange shadow-sm hover:shadow-md transition">
+                        <p class="text-gray-600 italic mb-3">"GILA LUCU SEKALIII!! GEMUSHH Desain stikernya kerenn worth it bangett buat ditempel di belakang laptop!"</p>
+                        <p class="font-bold text-akarana-navy text-sm">- Sekar, Koord dankom</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-akarana-gold shadow-sm hover:shadow-md transition">
+                        <p class="text-gray-600 italic mb-3">"Kain bajunya ademmmm enak kalau dipake latihan bisa pakai nongzz juga soalnya desainnya kalcer WKWKWK. Keren Akarana!"</p>
+                        <p class="font-bold text-akarana-navy text-sm">- Nekat, Koord Infokom</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-akarana-orange shadow-sm hover:shadow-md transition">
+                        <p class="text-gray-600 italic mb-3">"Pinnya lucu-lucu banget! Kualitas cetaknya tajam dan penitinya kuat, nda gampang lepas ji wehh kalau dipasang di tas. ukurannya agak minii sih tapi itu yang bikin lucuuu>__<"</p>
+                        <p class="font-bold text-akarana-navy text-sm">- Wawa, Manusia unhas</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-akarana-gold shadow-sm hover:shadow-md transition">
+                        <p class="text-gray-600 italic mb-3">"Pengiriman aman dan cepat. Paket bundling 5 bener-bener worth it, dapet baju sama printilannya sekaligus. Sukses terus Akarana!"</p>
+                        <p class="font-bold text-akarana-navy text-sm">- Budi, Alumni</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-akarana-orange shadow-sm hover:shadow-md transition">
+                        <p class="text-gray-600 italic mb-3">"Ganci akriliknya tebel, desainnya juga ga pasaran. Cocok banget buat gantungan kunci motor."</p>
+                        <p class="font-bold text-akarana-navy text-sm">- Ayu, Mahasiswa</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Pemesanan -->
+            <div class="bg-akarana-navy p-6 rounded-3xl shadow-xl">
+                <div class="bg-white rounded-2xl p-6 md:p-8">
+                    <h3 class="font-display text-2xl font-bold text-akarana-navy mb-6 text-center">Formulir Pesanan</h3>
+                    
+                    <form action="#" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-semibold text-akarana-navy text-sm mb-1">Nama Lengkap:</label>
+                                <input type="text" class="w-full p-3 border-2 border-yellow-200 rounded-xl focus:outline-none focus:border-akarana-orange transition" placeholder="Nama Anda" required>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-akarana-navy text-sm mb-1">No. WhatsApp:</label>
+                                <input type="text" class="w-full p-3 border-2 border-yellow-200 rounded-xl focus:outline-none focus:border-akarana-orange transition" placeholder="Cth: 0812345..." required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-akarana-navy text-sm mb-1">Pilih Produk / Paket Bundling:</label>
+                            <select class="w-full p-3 border-2 border-yellow-200 rounded-xl focus:outline-none focus:border-akarana-orange transition text-gray-700 font-medium" required>
+                                <option value="">-- Silakan Pilih --</option>
+                                
+                                <optgroup label="Produk Satuan">
+                                    <option>Sticker Pack A5 (Rp 15.000)</option>
+                                    <option>Pin (Rp 5.000)</option>
+                                    <option>Gantungan Kunci (Rp 15.000)</option>
+                                    <option>Kipas Tangan (Rp 17.000)</option>
+                                    <option>Kaos Lengan Pendek (Rp 100.000)</option>
+                                    <option>Kaos Lengan Panjang (Rp 110.000)</option>
+                                </optgroup>
+                                
+                                <optgroup label="Paket Bundling Hemat">
+                                    <option>Paket 1: Pin + Stiker (Rp 18.000)</option>
+                                    <option>Paket 2: Ganci + Stiker (Rp 27.000)</option>
+                                    <option>Paket 3: Ganci + Pin + Stiker (Rp 32.000)</option>
+                                    <option>Paket 4: Kipas + Ganci + Pin + Stiker (Rp 47.000)</option>
+                                    <option>Paket 5: Baju Pendek + Pin + Stiker (Rp 115.000)</option>
+                                    <option>Paket 5: Baju Panjang + Pin + Stiker (Rp 125.000)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="bg-yellow-50 p-4 rounded-xl border border-yellow-200">
+                            <p class="text-sm font-bold text-akarana-navy mb-1">Tentukan Varian Desain/Ukuran:</p>
+                            <p class="text-[11px] text-gray-500 mb-3 italic">Isi bagian yang sesuai dengan isi produk/paket pesananmu. Kosongkan jika tidak ada.</p>
+                            
+                            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                                
+                                <!-- Stiker -->
+                                <div>
+                                    <label class="block text-xs font-semibold text-akarana-navy-dark mb-1">Stiker Pack</label>
+                                    <select class="w-full p-2 border border-yellow-300 rounded focus:outline-none focus:border-akarana-orange text-sm bg-white">
+                                        <option value="">- Kosong -</option>
+                                        <option>Desain A (Kuning)</option>
+                                        <option>Desain B (Navy)</option>
+                                    </select>
+                                </div>
+
+                                <!-- Kipas -->
+                                <div>
+                                    <label class="block text-xs font-semibold text-akarana-navy-dark mb-1">Kipas Tangan</label>
+                                    <select class="w-full p-2 border border-yellow-300 rounded focus:outline-none focus:border-akarana-orange text-sm bg-white">
+                                        <option value="">- Kosong -</option>
+                                        <option>Desain A (Kucing 1)</option>
+                                        <option>Desain B (Kucing 2)</option>
+                                    </select>
+                                </div>
+
+                                <!-- Pin -->
+                                <div>
+                                    <label class="block text-xs font-semibold text-akarana-navy-dark mb-1">Pin</label>
+                                    <select class="w-full p-2 border border-yellow-300 rounded focus:outline-none focus:border-akarana-orange text-sm bg-white">
+                                        <option value="">- Kosong -</option>
+                                        <option>Desain A</option>
+                                        <option>Desain B</option>
+                                        <option>Desain C</option>
+                                        <option>Desain D</option>
+                                    </select>
+                                </div>
+
+                                <!-- Ganci -->
+                                <div>
+                                    <label class="block text-xs font-semibold text-akarana-navy-dark mb-1">Ganci</label>
+                                    <select class="w-full p-2 border border-yellow-300 rounded focus:outline-none focus:border-akarana-orange text-sm bg-white">
+                                        <option value="">- Kosong -</option>
+                                        <option>Desain 1</option>
+                                        <option>Desain 2</option>
+                                        <option>Desain 3</option>
+                                        <option>Desain 4</option>
+                                    </select>
+                                </div>
+
+                                <!-- Kaos -->
+                                <div>
+                                    <label class="block text-xs font-semibold text-akarana-navy-dark mb-1">Ukuran Kaos</label>
+                                    <select class="w-full p-2 border border-yellow-300 rounded focus:outline-none focus:border-akarana-orange text-sm bg-white">
+                                        <option value="">- Kosong -</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Catatan -->
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div class="md:col-span-1">
+                                <label class="block font-semibold text-akarana-navy text-sm mb-1">Jumlah:</label>
+                                <input type="number" min="1" value="1" class="w-full p-3 border-2 border-yellow-200 rounded-xl focus:outline-none focus:border-akarana-orange transition text-center font-bold text-lg" required>
+                            </div>
+                            <div class="md:col-span-3">
+                                <label class="block font-semibold text-akarana-navy text-sm mb-1">Catatan Tambahan:</label>
+                                <input type="text" class="w-full p-3 border-2 border-yellow-200 rounded-xl focus:outline-none focus:border-akarana-orange transition" placeholder="Cth: Stikernya mau 2 desain yang beda ya">
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="w-full bg-gradient-to-r from-akarana-orange to-akarana-orange-light text-white font-display font-bold text-lg py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition transform mt-6">
+                            🎟️ Konfirmasi & Kirim Pesanan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-akarana-navy-dark text-white/80 pt-12 pb-6 border-t-4 border-akarana-gold mt-10">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 text-sm">
+            <div>
+                <h4 class="font-display text-xl font-bold text-white mb-4">AKARANA 2026</h4>
+                <p class="mb-4">Menyediakan produk berkualitas tinggi yang mewakili semangat seni dan kreativitas warga kampus.</p>
+            </div>
+            <div>
+                <h4 class="font-display text-lg font-bold text-white mb-4">Tautan Penting</h4>
+                <ul class="space-y-2">
+                    <li><a href="#beranda" class="hover:text-akarana-gold transition">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:text-akarana-gold transition">Tentang Kami</a></li>
+                    <li><a href="#produk" class="hover:text-akarana-gold transition">Layanan / Produk</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-display text-lg font-bold text-white mb-4">Hubungi Kami</h4>
+                <p class="mb-2">Sekretariat Teater Kampus Unhas</p>
+                <p class="mb-2">ukmteaterkampusunhas@gmail.com</p>
+                <p class="mb-2">+62 812-3456-7890</p>
+                <a href="https://www.instagram.com/ukm_teaterkampusunhas" target="_blank" class="inline-block mt-3 text-akarana-gold font-bold hover:text-white transition">Instagram: @ukm_teaterkampusunhas</a>
+            </div>
+        </div>
+        <div class="text-center font-body text-xs border-t border-white/10 pt-6">
+            <p>&copy; 2026 Salwa Ainiyyah. NIM: H071251032. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
