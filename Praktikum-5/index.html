@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Tugas - Tim Marsha</title>
+    
+    <!-- Memanggil Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Konfigurasi warna custom -->
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    matcha: '#9cb39a',
+                    matchaLight: '#e8f0e9',
+                    matchaDark: '#729c7a',
+                    pinkSoft: '#ffe6ec',
+                    pinkDark: '#ff8fab'
+                }
+            }
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans h-screen flex">
+    
+    <!-- Sidebar daftar anggota -->
+    <aside class="w-64 border-r border-pink-200 bg-pinkSoft flex flex-col shadow-sm z-10 shrink-0">
+        <div class="p-6 pb-4">
+            <h1 class="text-xl font-bold text-gray-800">Tim Marsha</h1>
+            <p class="text-xs text-gray-500 mt-2 font-medium tracking-wide">Anggota</p>
+        </div>
+
+        <!-- Status loading anggota -->
+        <p id="loading-users" class="px-6 text-sm text-matcha animate-pulse">Memuat anggota...</p>
+        
+        <!-- Pesan error anggota -->
+        <p id="error-users" class="px-6 text-sm text-pinkDark hidden"></p>
+
+        <!-- Wadah list anggota -->
+        <ul id="member-list" class="flex-1 overflow-y-auto custom-scrollbar">
+        </ul>
+    </aside>
+
+    <!-- Konten utama daftar tugas -->
+    <main class="flex-1 flex flex-col bg-white overflow-hidden">
+        
+        <!-- Tampilan awal sebelum klik anggota -->
+        <div id="welcome-state" class="flex-1 flex items-center justify-center text-pinkDark">
+            <p>Pilih anggota untuk melihat tugas</p>
+        </div>
+
+        <!-- Area utama tugas -->
+        <div id="task-dashboard" class="hidden flex-col h-full p-8 lg:px-12 w-full max-w-5xl mx-auto">
+            
+            <!-- Judul dan progress bar -->
+            <div class="flex justify-between items-end border-b border-gray-200 pb-4 mb-6">
+                <div>
+                    <h2 id="task-title" class="text-2xl font-bold text-gray-800">Tugas</h2>
+                    <p id="task-progress-text" class="text-sm text-gray-500 mt-1">0 dari 0 tugas selesai</p>
+                </div>
+                <!-- Background progress bar -->
+                <div class="w-48 mb-1">
+                    <div class="h-1.5 bg-gray-100 rounded-full w-full overflow-hidden">
+                        <!-- Bar progress pink -->
+                        <div id="task-progress-bar" class="h-full bg-pinkDark transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pencarian dan tambah tugas -->
+            <div class="flex gap-4 mb-6">
+                <!-- Input cari tugas -->
+                <div class="w-1/3">
+                    <input type="text" id="search-task" placeholder="Cari judul tugas" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-400">
+                </div>
+                
+                <!-- Form tambah tugas -->
+                <form id="add-task-form" class="flex-1 flex gap-4">
+                    <input type="text" id="new-task-title" placeholder="Tambah tugas baru, minimal 5 karakter" class="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-400">
+                    <button type="submit" id="btn-simpan" class="bg-matcha hover:bg-pinkDark text-white px-6 py-2 rounded font-medium transition-colors">Simpan</button>
+                </form>     
+            </div>
+            
+            <!-- Notifikasi dan error -->
+            <p id="add-task-error" class="text-pinkDark text-sm mb-4 hidden"></p>
+            <div id="toast" class="hidden bg-gray-800 text-white px-4 py-2 rounded text-sm mb-4 self-start shadow-md">
+                <span id="toast-message">Tugas berhasil ditambahkan.</span>
+            </div>
+
+            <!-- Area list tugas -->
+            <div class="flex-1 overflow-y-auto pr-2 pb-8">
+                <!-- Loading & error tugas -->
+                <p id="loading-tasks" class="text-sm text-matcha animate-pulse hidden">Memuat tugas...</p>
+                <p id="error-tasks" class="text-sm text-pinkDark hidden"></p>
+                
+                <!-- Wadah list tugas -->
+                <ul id="task-list" class="flex flex-col">
+                </ul>
+                
+                <!-- Pesan tugas tidak ditemukan -->
+                <p id="empty-search" class="text-sm text-gray-500 hidden mt-4 text-center">Tidak ada tugas yang cocok.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Sambung ke JS -->
+    <script src="script.js"></script>
+</body>
+</html>
