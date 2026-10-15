@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awas Ketua Mau Pantau</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 text-slate-800">
+
+  <header class="bg-indigo-700 text-white">
+    <div class="mx-auto max-w-5xl px-4 py-6">
+      <h1 class="text-2xl font-bold sm:text-3xl">Tugas Anggota</h1>
+      <p class="mt-1 text-sm text-indigo-100">Pilih anggota untuk melihat tugas dan progresnya.</p>
+    </div>
+  </header>
+
+  <main class="mx-auto grid max-w-5xl gap-6 px-4 py-6 md:grid-cols-3">
+
+    <!-- Daftar anggota (F1) -->
+    <section class="md:col-span-1">
+      <h2 class="mb-3 text-lg font-semibold">Anggota Tim</h2>
+      <p id="status-anggota" class="text-sm text-slate-500"></p>
+      <p id="error-anggota" class="rounded-md bg-red-50 p-3 text-sm text-red-700 hidden"></p>
+      <div id="daftar-anggota" class="flex flex-col gap-2"></div>
+    </section>
+
+    <!-- Tugas anggota (F2-F5) -->
+    <section class="md:col-span-2">
+      <h2 id="judul-tugas" class="mb-3 text-lg font-semibold">Tugas</h2>
+
+      <p id="petunjuk" class="rounded-md border border-dashed border-slate-300 bg-white p-4 text-sm text-slate-500">
+        Belum ada anggota yang dipilih.
+      </p>
+
+      <p id="status-tugas" class="text-sm text-slate-500"></p>
+      <p id="error-tugas" class="rounded-md bg-red-50 p-3 text-sm text-red-700 hidden"></p>
+
+      <div id="konten-tugas" class="hidden">
+        <p id="ringkasan" class="mb-4 text-sm font-medium text-indigo-700"></p>
+
+        <!-- Pencarian (F3) -->
+        <label for="cari" class="mb-1 block text-sm font-medium">Cari tugas</label>
+        <input id="cari" type="text" placeholder="Ketik judul tugas..."
+          class="mb-4 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200">
+
+        <!-- Tambah tugas (F4) -->
+        <form id="form-tambah" novalidate class="mb-4 rounded-lg border border-slate-200 bg-white p-4">
+          <label for="input-judul" class="mb-1 block text-sm font-medium">Tugas baru</label>
+          <div class="flex flex-col gap-2 sm:flex-row">
+            <input id="input-judul" type="text" placeholder="Judul tugas (minimal 5 karakter)"
+              class="flex-1 rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200">
+            <button id="tombol-simpan" type="submit"
+              class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60">Simpan</button>
+          </div>
+          <p id="error-form" class="mt-2 text-sm text-red-600"></p>
+        </form>
+
+        <div id="notifikasi" role="status"
+          class="mb-4 rounded-md bg-green-50 p-3 text-sm text-green-700 hidden"></div>
+
+        <!-- Daftar tugas -->
+        <ul id="daftar-tugas" class="flex flex-col gap-2"></ul>
+        <p id="tidak-ada" class="rounded-md bg-white p-4 text-center text-sm text-slate-500 hidden">Tidak ada tugas yang cocok</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
