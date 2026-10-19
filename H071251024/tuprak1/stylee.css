@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    color: rgb(103, 36, 36);
+    line-height: 1.6;
+}
+
+h1, h2{
+    color:rgb(3, 52, 3);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin:0;
+    border: none;
+    border-top: 2px solid whitesmoke;
+}

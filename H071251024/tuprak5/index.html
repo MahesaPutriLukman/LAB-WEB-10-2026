@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantauan Tugas Tim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen">
+    <main class="max-w-4xl mx-auto p-4 sm:p-6">
+        <h1 class="text-2xl font-bold">Pantauan Tugas Tim</h1>
+
+        <!-- DAFTAR ANGGOTA -->
+         <section class="bg-white rounded-xl shadow p-4 mb-6">
+            <h2 class="text-lg font-semibold mb-3">Anggota Tim</h2>
+            <p id="loading-anggota" class="text-gray-500">Memuat Anggota...</p>
+            <p id="error-anggota" class="hidden text-red-600"></p>
+            <div id="daftar-anggota" class="flex flex-wrap gap-2"></div>
+         </section>
+         <!-- TUGAS ANGGOTA -->
+          <section id="bagian-tugas" class="hidden bg-white rounded-xl shadow p-4">
+            <h2 id="judul-tugas" class="text-lg font-semibold mb-1">Tugas</h2>
+            <p id="ringkasan" class="text-sm text-gray-600 mb-4"></p>
+
+            <p id="loading-tugas" class="hidden text-gray-500 mb-3">Memuat Tugas...</p>
+            <p id="error-tugas" class="hidden text-red-600 mb-3"></p>
+
+            <div id="isi-tugas">
+                <input id="cari" type="text" placeholder="Cari tugas berdasarkan judul..."
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+
+                <form id="form-tugas" class="mb-4" novalidate>
+                    <div class="flex gap-2">
+                        <input id="input-judul" type="text" placeholder="Judul tugas baru"
+                        class="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                        <button id="tombol-simpan" type="submit"
+                        class="bg-indigo-600 text-white rounded-lg px-4 py-2 hover:bg-indigo-700 disabled:opacity-60">Simpan</button>
+                    </div>
+                    <p id="error-form" class="hidden text-sm text-red-600"></p>
+                </form>
+
+                <p id="pesan-kosong" class="hidden text-gray-500 italic mb-2"></p>
+                <ul id="daftar-tugas" class=" divide-y divide-gray-200"></ul>
+            </div>
+          </section>
+    </main>
+
+    <div id="notifikasi" class="hidden fixed bottom-4 right-4 bg-green-600 text-white rounded-lg shadow-lg px-4 py-2"></div>
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>
