@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. SMOOTH SCROLLING & SCROLL PADDING */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* Jarak aman agar konten tidak tertutup Navbar saat di-klik */
+}
+
+/* Memastikan tidak ada yang terpotong di body */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Mencegah layar geser-geser ke samping */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px; 
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 143, 179, 0.1); 
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #FF8FB3; 
+  border-radius: 9999px; 
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #35C8B4; 
+}
+
+/* 2. ANIMASI KETIK & HAPUS (PURE CSS LOOP)  */
+@keyframes type-erase {
+  0%, 10% { width: 0; }           /* Bersih 100% & jeda sebelum mengetik */
+  45%, 60% { width: 39ch; }       /* Ketik patah-patah pas 39 karakter */
+  95%, 100% { width: 0; }         /* Hapus patah-patah sampai bersih 0 */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #35C8B4; } /* Kursor ketik warna Menthe */
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #35C8B4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+  animation: 
+    type-erase 8s steps(46, end) 2.3s infinite, 
+    blink-caret .75s step-end infinite;
+}
+
+/* 3. PURE CSS LOADING SCREEN (TANPA USESTATE) */
+@keyframes loader-fade-out {
+  0% { opacity: 1; visibility: visible; }
+  80% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+@keyframes text-pop-up {
+  0% { transform: translateY(20px); opacity: 0; }
+  20% { transform: translateY(0); opacity: 1; }
+  80% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-20px); opacity: 0; }
+}
+
+@keyframes progress-load {
+  0% { width: 0%; }
+  70% { width: 100%; }
+  100% { width: 100%; }
+}
+
+.loader-container {
+  animation: loader-fade-out 2.5s forwards;
+}
+
+.loader-text {
+  animation: text-pop-up 2.5s forwards;
+}
+
+.loader-progress {
+  animation: progress-load 2s ease-in-out forwards;
+}
+
+/* 4. RUNNING TEXT */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+/* Menghentikan animasi kalau di-hover */
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
+}
