@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Tema warna dan huruf Kedai Kopi Senja ada di tailwind.config.js */
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-krem-100 font-sans text-kopi-900;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+
+  /* Garis fokus saat memakai keyboard (Tab) */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-senja-500;
+  }
+}
