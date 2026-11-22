@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #f8f3ea;
+  --color-sage: #b9c9b3;
+  --color-softblue: #c5dbe3;
+  --color-blush: #e8c5c3;
+  --color-peach: #ebc6a8;
+  --color-brown: #927b68;
+  --color-brown-ink: #6b5848; /* turunan Muted Brown yang lebih gelap, untuk teks kecil agar kontras */
+  --color-forest: #45594a;
+  --font-sans: var(--font-nunito);
+  --font-serif: var(--font-fraunces);
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-forest);
+}
